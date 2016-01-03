@@ -70,6 +70,10 @@ $(function(){
                 snabbt_notification_shake_wiggle('.value-3');
             } else if (counter === 4) {
                 snabbt_notification_shake_wiggle('.value-4');
+            } else if (counter === 5) {
+                snabbt_notification_shake_wiggle('.value-5');
+                $('.hidden').removeClass('hidden');
+                $('.position-reset').removeClass('position-reset');
             } else {
                 counter = 1;
                 snabbt_notification_shake_wiggle('.value-1');

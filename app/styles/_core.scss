@@ -7,7 +7,7 @@ body {
     // min-width: 800px;
     overflow: hidden;
     background-color: $sublime-gray;
-    min-width: 330px;
+    min-width: 360px;
 }
 
 pre {
@@ -16,9 +16,9 @@ pre {
     color: $gray-lighter;
 }
 
-.test {
-    height: 15px;
-    line-height: 5px;
+.position-reset {
+    position: relative;
+    top: -15px;
 }
 
 span {
@@ -34,33 +34,42 @@ span {
 
 }
 
-@media (max-width: 380px){
+@media (max-width: 420px){
+    pre {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 420px){
     pre {
         font-size: 11px;
     }
 }
 
-@media (min-width: 380px){
+@media (min-width: 490px){
     pre {
         font-size: 13px;
     }
 }
 
-@media (min-width: 460px){
+@media (min-width: 590px){
     pre {
         font-size: 16px;
     }
 }
 
-@media (min-width: 560px){
+@media (min-width: 730px){
     pre {
         font-size: 20px;
     }
 }
 
-@media (min-width: 660px){
+@media (min-width: 870px){
     pre {
         font-size: 24px;
+    }
+    .position-reset {
+        top: -20px;
     }
 }
 
