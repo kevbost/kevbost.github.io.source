@@ -2,8 +2,11 @@
   "name": "kevbost-github-io",
   "private": true,
   "dependencies": {
+    "blast-text": "~2.0.0",
     "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1"
+    "google-code-prettify": "~1.0.4",
+    "modernizr": "~2.8.1",
+    "snabbt.js": "~0.6.4"
   },
   "overrides": {
     "bootstrap-sass": {

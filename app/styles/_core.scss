@@ -3,45 +3,19 @@ body {
     overflow: hidden;
 }
 
-#ticker {
-    .ticker-contents {
-        font-family: monospace;
-
-        a {
-            color: $red-material;
-
-            &:hover {
-                text-decoration: underline;
-                color: $red-material;
-            }
-        }
-
-        .quoted {
-            color: $red-material;
-
-            &.accent {
-                color: $red-material;
-            }
-        }
-    }
+pre {
+    background-color: transparent;
+    border: none;
 }
 
+// span {
+//     display: block;
+// }
 
-
-@media (min-width: 360px) {
-    .ticker-contents {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 360px) {
-    .ticker-contents {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 520px) {
-    .ticker-contents {
+// .blasted {
+    span {
+        display: inline-block;
         font-size: 20px;
     }
-}
+// }
+//

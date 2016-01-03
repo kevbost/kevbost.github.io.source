@@ -9,11 +9,6 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -21,13 +16,36 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container-fluid"></div>
+    <div class="container-fluid">
+        <pre class="">
+{
+    "name":"Kevin Bost",
+    "specialties":[
+        "Front End Web Development",
+        "SCSS Wizardry",
+        "JS Junkie"
+    ],
+    "overrides":{
+        "education":"The Iron Yard - 2014"
+    },
+    "web-locations": {
+        "github":"github.com/kevbost",
+        "email":"kevbost@gmail.com"
+    }
+}
+        </pre>
+    </div>
+
+    <!-- <div class="container-fluid blasted">
+        muahahahaha
+    </div> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -42,8 +60,12 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/blast-text/jquery.blast.js"></script>
+    <script src="/bower_components/google-code-prettify/bin/prettify.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+    <script src="/bower_components/snabbt.js/snabbt.min.js"></script>
 
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
