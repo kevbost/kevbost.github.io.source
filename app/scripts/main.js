@@ -56,12 +56,11 @@ $(function(){
     });
 
     setTimeout(function(){
-        snabbt_multi_element_chain('.blast');
+        // snabbt_multi_element_chain('.blast');
     }, 1000);
 
     $('body')
         .on('click', function(){
-
             snabbt_stop('.blast');
             if (counter === 1) {
                 snabbt_notification_shake_wiggle('.value-1');
