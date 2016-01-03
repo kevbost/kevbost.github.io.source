@@ -1,4 +1,5 @@
-var regex = /(?=["'])(?:"[^"\\]*(?:\\[\s\S][^"\\]*)*"|'[^'\\]*(?:\\[\s\S][^'\\]*)*')/;
+// var regex = /(?=["'])(?:"[^"\\]*(?:\\[\s\S][^"\\]*)*"|'[^'\\]*(?:\\[\s\S][^'\\]*)*')/;
+var regex = /^"(.+)"$/;
 
 var $,
     snabbt,
@@ -9,7 +10,7 @@ var snabbt_multi_element_chain = function(element){
     snabbt(document.querySelectorAll(element), {
         fromRotation: [0, 0, 0],
         rotation: function(i, total) {
-            return [0, 0, (i / (total - 1)) * (Math.PI / total)];
+            return [0, 0, (i / (total - 1)) * -(Math.PI / total)];
         },
         delay: function(i) {
             return i * 20;
@@ -60,18 +61,19 @@ $(function(){
 
     $('body')
         .on('click', function(){
+
             snabbt_stop('.blast');
             if (counter === 1) {
-                snabbt_notification_shake_wiggle('.wiggle-1');
+                snabbt_notification_shake_wiggle('.value-1');
             } else if (counter === 2) {
-                snabbt_notification_shake_wiggle('.wiggle-2');
+                snabbt_notification_shake_wiggle('.value-2');
             } else if (counter === 3) {
-                snabbt_notification_shake_wiggle('.wiggle-3');
+                snabbt_notification_shake_wiggle('.value-3');
             } else if (counter === 4) {
-                snabbt_notification_shake_wiggle('.wiggle-4');
+                snabbt_notification_shake_wiggle('.value-4');
             } else {
                 counter = 1;
-                snabbt_notification_shake_wiggle('.wiggle-1');
+                snabbt_notification_shake_wiggle('.value-1');
             }
             counter += 1;
         })

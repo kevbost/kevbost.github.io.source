@@ -1,25 +1,66 @@
+html,
+body {
+    height: 100%;
+}
+
 body {
     // min-width: 800px;
     overflow: hidden;
+    background-color: $sublime-gray;
+    min-width: 330px;
 }
 
 pre {
     background-color: transparent;
     border: none;
+    color: $gray-lighter;
 }
 
-// span {
-//     display: block;
-// }
+.test {
+    height: 15px;
+    line-height: 5px;
+}
 
-// .blasted {
+span {
+    display: inline-block;
+
+    &.key > .blast {
+        color: #76e6f8;
+    }
+
+    &.value > .blast {
+        color: #f7f49c;
+    }
+
+}
+
+@media (max-width: 380px){
     pre {
-        // font-size: 20px;
-        display: inline-block;
+        font-size: 11px;
+    }
+}
 
+@media (min-width: 380px){
+    pre {
+        font-size: 13px;
     }
-    span {
-        display: inline-block;
+}
+
+@media (min-width: 460px){
+    pre {
+        font-size: 16px;
     }
-// }
-//
+}
+
+@media (min-width: 560px){
+    pre {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 660px){
+    pre {
+        font-size: 24px;
+    }
+}
+
